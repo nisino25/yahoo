@@ -72,13 +72,70 @@
         </form>
 
       </section>
-
       <div id="topLink">
         <a href="#">PayPayモール「WINTER ZOZOSALE」開催中</a>
         <a href="#">ご当地テレビ 全国の放送局の番組をお届け</a>
       </div>
 
+
       <div id="main">
+        <div class="col-1 col"><!-- left -->
+          <ul class="left1">
+            <li>ショッピング</li>
+            <li>PayPayモール</li>
+            <li>ヤフオク！</li>
+            <li>PayPayフリマ</li>
+            <li>ZOZOTOWN</li>
+            <li>LOHACO</li>
+            <li>トラベル</li>
+            <li>一休.com</li>
+            <li>一休.comレストラン</li>
+            <li>ニュース</li>
+            <li>天気・災害</li>
+            <li>スポーツナビ</li>
+            <li>フィナンス</li>
+            <li>テレビ</li>
+            <li>映画</li>
+            <li>GYAO!</li>
+            <li>ゲーム</li>
+            <li>Yahoo!モバゲー</li>
+            <li>ebookjapan</li>
+            <li>占い</li>
+            <li>地図</li>
+            <li>路線情報</li>
+            <li>Retty</li>
+            <li>クラシル</li>
+            <li>不動産</li>
+            <li>自動車</li>
+            <li>TRILL</li>
+            <li>パートナー</li>
+            <li>サービス一覧</li>
+          </ul>
+
+          <ul class="left2">
+            <li><strong>ビジネスで活用するなら</strong></li>
+            <li>スマホ経済を無料で導入</li>
+            <li>Yahooに広告を出そう</li>
+            <li>ネットショップ開業無料</li>
+            <li>データで生活者分析</li>
+            <li>Tポイント提携店募集</li>
+          </ul>
+
+          <ul class="left3">
+            <li><strong>社会的な取組</strong></li>
+            <li>ネット募金</li>
+            <li>ボランティア</li>
+            <li>エールマーケット</li>
+            <li>Yahoo!基金で支援助生</li>
+          </ul>
+
+          <ul class="left4">
+            <li><strong>ヤフーからのお知らせ</strong></li>
+            <li>「ポテンシャル採用」の応募を受付中</li>
+          </ul>
+        </div> 
+        <div class="col-2 col"></div> <!-- middle -->
+        <div class="col-3 col"></div> <!-- right -->
         
       </div>
 
@@ -90,18 +147,16 @@
 
 </template>
 <script>
-
 export default {
   name: 'App',
   
 }
 </script>
-
-
-
-
-
 <style>
+
+/* background-color: #f1f5ff;
+border: 5px solid #beccea;
+color: #4682B4; */
 
 ul {
   list-style-type: none;
@@ -219,18 +274,79 @@ input[type=text] {
 }
 
 
-
+#topLink{
+  margin-top: -1em;
+}
 #topLink a:link, a:visited{
   text-decoration:none;
   color: #4682B4;
 }
-
 #topLink a:nth-of-type(1){
   margin-left: 7em;
 }
 #topLink a:nth-of-type(2){
   margin-left: 2em;
 }
+
+
+
+#main .col{
+  /* background-color: #f1f5ff;  */
+  /* float:left; width:10%; */
+}
+
+.col-1 ul  {
+  left: 0;
+  background-color: #f1f5ff;
+  width: 9em;
+  border: 5px solid #beccea;
+  margin-left: -5em;
+  position: relative;
+  margin-top: 2em;
+
+  padding: 1.5em;
+
+  margin: 25px;
+  margin-right: -0.5em;
+  margin-left: 0em;
+}
+
+
+.col-1 li{
+  margin-bottom: 0.25em;
+  margin-left: -0.5em;
+  color: #4682B4;
+}
+
+
+.col-2{
+  float:left;
+  width:35%;
+  /* height: 20em; */
+  border: 5px solid #beccea;
+  padding: 1.5em;
+  
+  margin: 25px;
+  margin-right: -0.5em;
+}
+.col-3{
+  float:left;
+  width:30%;
+  /* height: 20em; */
+  border: 5px solid #beccea;
+  padding: 1.5em;
+  
+  margin: 25px;
+  margin-right: -0.5em;
+}
+
+
+
+
+
+
+
+
 
 
 
