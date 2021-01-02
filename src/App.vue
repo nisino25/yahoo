@@ -73,11 +73,15 @@
 
       </section>
 
-      <div id="topLink"></div>
+      <div id="topLink">
+        <a href="#">PayPayモール「WINTER ZOZOSALE」開催中</a>
+        <a href="#">ご当地テレビ 全国の放送局の番組をお届け</a>
+      </div>
 
       <div id="main">
         
       </div>
+
     </div>
 
 
@@ -110,12 +114,12 @@ ul {
   width: 60em
 }
 
+
 #header a:link, a:visited,
 #header hr {
   color: #4000ff;
   text-decoration:none;
 }
-
 #header small{
   color: black;
   font-size: 100%;
@@ -141,7 +145,6 @@ ul {
 #masterHead li:nth-of-type(6){
   margin-right: 1em;
 }
-
 #masterHead li:nth-of-type(1){
   margin-left: 5em;
 }
@@ -169,7 +172,6 @@ li.item {
 }
 
 
-
 #search{
   background-color: #f1f5ff;
   width: 52em;
@@ -179,18 +181,15 @@ li.item {
   
   margin: 25px;
 }
-
 #search li{
   margin-top: -2.5rem;
   font-size: 115%;
   color: #4682B4;
 }
-
 #search li:nth-of-type(1){
   margin-left: 3rem;
   color: black;
 }
-
 #search li:nth-of-type(1),
 #search li:nth-of-type(2),
 #search li:nth-of-type(3),
@@ -200,20 +199,9 @@ li.item {
 #search li:nth-of-type(7){
   margin-right: 1em;
 }
-
-/* #emptyBox{
-  background-color: white;
-  width: 60%;
-  border: 5px solid grey;
-  padding: 20px;
-  margin-top: -40px;
-  margin-left: 5rem;
-} */
-
 #search form{
   margin-top: -1em;
 }
-
 input[type=text] {
   margin-top: -10em;
   margin-left: 6em;
@@ -222,13 +210,26 @@ input[type=text] {
   border: 2px solid grey;
   border-radius: 0px;
 }
-
 #search button{
   width: 10em;
   height: 2em;
   margin-left: 1em;
   border-radius: 0px;
   background-color: #0080ff;
+}
+
+
+
+#topLink a:link, a:visited{
+  text-decoration:none;
+  color: #4682B4;
+}
+
+#topLink a:nth-of-type(1){
+  margin-left: 7em;
+}
+#topLink a:nth-of-type(2){
+  margin-left: 2em;
 }
 
 
