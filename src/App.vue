@@ -274,10 +274,86 @@
 
           <div class="pickup"><!-- pickup -->
             <strong>ピックアップ</strong>
+            <small>Yahoo! ショッピング</small>
+            <div>
+              <ul class="row">
+                  <li class="shoppingItem">
+                    <img src="https://s.yimg.jp/images/premium/contents/bnr/2020/0901_edit/thumb_01.jpg" >
+                    <a href="#" class="shoppingCaption">売れ筋の日本製</a>
+                  </li>
+                  <li class="shoppingItem">
+                    <img src="https://s.yimg.jp/images/premium/contents/bnr/2020/1224_edit/thumb_01.jpg">
+                    <a href="#" class="shoppingCaption">今売れている知育おもちゃ</a>
+                  </li>
+                  <li class="shoppingItem">
+                    <img src="https://s.yimg.jp/images/premium/contents/bnr/2020/0901_edit/thumb_03.jpg">
+                    <a href="#" class="shoppingCaption">タイプさまざまな体温計</a>
+                  </li>
+                </ul>
+                <ul class="row">
+                  <li class="shoppingItem">
+                    <img src="https://s.yimg.jp/images/premium/contents/bnr/2020/1224_edit/thumb_02.jpg" >
+                    <a href="#" class="shoppingCaption">冬のお取り寄せグルメ</a>
+                  </li>
+                  <li class="shoppingItem">
+                    <img src="https://s.yimg.jp/images/premium/contents/bnr/2020/1224_edit/thumb_03.jpg">
+                    <a href="#" class="shoppingCaption">人気のネックウォーマー</a>
+                  </li>
+                  <li class="shoppingItem">
+                    <img src="https://s.yimg.jp/images/premium/contents/bnr/2020/0924_edit/thumb_05.png">
+                    <a href="#" class="shoppingCaption">気になるスマートウォッチをチェック</a>
+                  </li>
+                </ul>
+            </div>
           </div>
 
           <div class='trending'><!-- trending -->
             <strong>リアルタイム検索で話題のキーワード</strong>
+            <div>
+              <ul>
+                <span class="ranking" style="color: #fff; backgroundColor: #b39b53">
+                  <span class="rankingNum">1</span> 
+                </span>
+                <img src="https://w7.pngwing.com/pngs/835/597/png-transparent-arrow-computer-icons-right-arrow-angle-triangle-monochrome.png" alt="">
+                <li class="title"><a href="#">2392人</a></li>
+                
+              </ul>
+
+              <ul>
+                <span class="ranking" style="color: #fff; backgroundColor: #888ca5">
+                  <span class="rankingNum">2</span> 
+                </span>
+                <img src="https://w7.pngwing.com/pngs/835/597/png-transparent-arrow-computer-icons-right-arrow-angle-triangle-monochrome.png" alt="">
+                <li class="title"><a href="#">カラオケ館</a></li>
+              </ul>
+
+              <ul>
+                <span class="ranking" style="color: #fff; backgroundColor: #ad8975;">
+                  <span class="rankingNum">3</span> 
+                </span>
+                <img src="https://w7.pngwing.com/pngs/835/597/png-transparent-arrow-computer-icons-right-arrow-angle-triangle-monochrome.png" alt="">
+                <li class="title"><a href="#">淫獄団地</a></li>
+              </ul>
+
+              <ul>
+                <span class="ranking" style="color: black; backgroundColor: #e8e8e8">
+                  <span class="rankingNum">4</span> 
+                </span>
+                <img src="https://w7.pngwing.com/pngs/835/597/png-transparent-arrow-computer-icons-right-arrow-angle-triangle-monochrome.png" alt="">
+                <li class="title"><a href="#">ニンテンドーeショップ</a></li>
+              </ul>
+
+              <ul>
+                <span class="ranking" style="color: black; backgroundColor: #e8e8e8">
+                  <span class="rankingNum">5</span> 
+                </span>
+                <img src="https://w7.pngwing.com/pngs/835/597/png-transparent-arrow-computer-icons-right-arrow-angle-triangle-monochrome.png" alt="">
+                <li class="title"><a href="#">2300人</a></li>
+              </ul>
+
+            </div>
+            <small><a href="">話題のキーワードをもっと見る</a></small>
+            
           </div>
 
           <div><!-- copyright --></div>
@@ -739,12 +815,13 @@ iframe{
   color: #3385ff
 }
 
+
 .pickup{
   position: absolute;
   top: 63.5em;
   left: 79em;
   width: 20em;
-  height: 10em;
+  height: 25em;
   border: 5px solid #beccea;
   
   margin: 25px;
@@ -752,10 +829,39 @@ iframe{
   background-color: white;
   z-index: 1;
 }
+.pickup small{
+  margin-left: 7em;
+}
+.shoppingItem li{
+  margin-top: -0.5em;
+}
+.shoppingItem img{
+  width: 100px;
+  height: 100px;
+}
+.shoppingItem :nth-of-type(1){
+  margin-left: -2.5em;
+  margin-right: 3em;
+}
+.shoppingItem :nth-of-type(2){
+  margin-left: 4em;
+}
+.shoppingItem :nth-of-type(3){
+  margin-left: 5em;
+}
+.shoppingCaption {
+  margin-left: -1em;
+  font-size: 100%;
+  margin-top: -0.5em;
+  display: block;
+  left: -2em;
+
+}
+
 
 .trending{
   position: absolute;
-  top: 80em;
+  top: 90em;
   left: 79em;
   width: 20em;
   height: 22em;
@@ -765,6 +871,45 @@ iframe{
   margin-right: -0.5em;
   background-color: white;
   z-index: 1;
+}
+
+.trending ul li{
+  display: flex;
+}
+.trending ul{
+  margin-top: 1rem;
+  /* padding-top: 1rem; */
+}
+.trendin ul:nth-of-type(1){
+
+}
+
+.ranking{
+  position: relative;
+  min-width: 16px;
+  height: 55px; 
+  margin-top: 1rem;
+  margin-left: -1em;
+  font-size: 200%;
+}
+
+.trending img{
+  margin-top: 0.5em;
+  position: absolute;
+  left:2rem; 
+  width:35px;
+  height: 15px;
+}
+
+.trending small{
+  float: right;
+  margin-right: 0.75em;
+}
+
+.trending li{
+  margin-top: -2.2em;
+  position: absolute;
+  left: 5em;
 }
 
 
