@@ -135,6 +135,7 @@
           </ul>
         </div> 
 
+
         <div class="col-2 col">
           <ul class="middle1">
             <div class="navbar"><!-- changing tab here -->
